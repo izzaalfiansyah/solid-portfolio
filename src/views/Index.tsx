@@ -1,4 +1,7 @@
 import { Component } from 'solid-js';
+import ProfileImage from '@/assets/me.png';
+import CV from '@/assets/cv.pdf';
+import { Link } from '@solidjs/router';
 
 const Index: Component = () => {
 	const names = ['Muhammad Izza', 'Alfiansyah'];
@@ -25,23 +28,24 @@ const Index: Component = () => {
 				</div>
 				<div class="text-center">
 					<a
-						href=""
+						href={CV}
+						target="_blank"
 						class="bg-white shadow text-blue-500 uppercase rounded px-4 p-2 font-semibold m-2 text-sm inline-block transform transition hover:scale-110"
 					>
 						DOWNLOAD CV
 					</a>
-					<a
-						href=""
+					<Link
+						href="/about"
 						class="bg-blue-500 shadow text-white uppercase rounded px-4 p-2 font-semibold m-2 text-sm inline-block transform transition hover:scale-110"
 					>
 						CONTACT ME
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div class="lg:flex-1 order-first lg:order-last">
 				<div class="flex justify-center">
 					<img
-						src="https://izzaalfiansyah.github.io/assets/me.635e887c.png"
+						src={ProfileImage}
 						class="rounded-full lg:w-350px w-200px p-2 border-4 border-blue-500 lg:mb-0 mb-14 cursor-pointer transition transform hover:-translate-y-5"
 					/>
 				</div>

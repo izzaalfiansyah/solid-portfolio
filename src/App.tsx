@@ -1,8 +1,8 @@
-import { Link, Route, Routes, useLocation } from '@solidjs/router';
+import { Link, useLocation } from '@solidjs/router';
 import { Component, createSignal, For, onMount } from 'solid-js';
-import MyAudio from './assets/music.mp3';
-import Index from './views/Index';
-import './App.css';
+import MyAudio from '@/assets/music.mp3';
+import '@/App.css';
+import Router from './Router';
 
 const paths = [
 	{
@@ -21,9 +21,9 @@ const paths = [
 		path: '/project',
 	},
 	{
-		title: 'Blog',
+		title: 'About',
 		icon: 'mdi mdi-view-gallery-outline',
-		path: '/blog',
+		path: '/about',
 	},
 ];
 
@@ -78,14 +78,12 @@ const App: Component = () => {
 				</div>
 			</div>
 			<div class="px-4 pb-16 py-10 lg:(ml-18 py-0 pb-0) lg:min-h-screen view">
-				<Routes>
-					<Route path="/" component={Index}></Route>
-				</Routes>
+				<Router></Router>
 			</div>
 			<button
-				class="outline-none border-gray-800 border-2 fixed lg:top-10 top-20 right-5 w-10 h-10 flex items-center justify-center rounded-full transition"
+				class="outline-none border-gray-800 border-2 fixed lg:top-10 top-20 right-5 w-10 h-10 flex items-center justify-center rounded-full transition bg-red-100"
 				onClick={handleMusic}
-				classList={{ 'bg-yellow-300 animate-spin': audioPlaying() }}
+				classList={{ '!bg-red-500 animate-spin': audioPlaying() }}
 			>
 				<i class="mdi mdi-access-point text-xl"></i>
 			</button>
