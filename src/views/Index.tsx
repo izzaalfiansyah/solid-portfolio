@@ -46,7 +46,7 @@ const Index: Component = () => {
 				<div class="flex justify-center">
 					<img
 						src={ProfileImage}
-						class="rounded-full lg:w-350px w-200px p-2 border-4 border-blue-500 lg:mb-0 mb-14 cursor-pointer transition transform hover:-translate-y-5"
+						class="rounded-full lg:w-350px w-200px lg:h-350px h-200px p-2 border-4 object-cover border-blue-500 lg:mb-0 mb-14 cursor-pointer transition transform hover:-translate-y-5"
 					/>
 				</div>
 			</div>
