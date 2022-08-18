@@ -1,0 +1,9 @@
+.view > * {
+	animation: animate-view 0.5s;
+}
+
+@keyframes animate-view {
+	from {
+		transform: translateX(-100%);
+	}
+}
