@@ -1,5 +1,4 @@
 import { Component } from 'solid-js';
-import ProfileImage from '@/assets/me.png';
 import CV from '@/assets/cv.pdf';
 import { Link } from '@solidjs/router';
 
@@ -45,7 +44,7 @@ const Index: Component = () => {
 			<div class="lg:flex-1 order-first lg:order-last">
 				<div class="flex justify-center">
 					<img
-						src={ProfileImage}
+						src="/assets/me.png"
 						class="rounded-full lg:w-350px w-200px lg:h-350px h-200px p-2 border-4 object-cover border-blue-500 lg:mb-0 mb-14 cursor-pointer transition transform hover:-translate-y-5 mt-5"
 					/>
 				</div>
