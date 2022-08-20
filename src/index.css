@@ -16,7 +16,7 @@ code {
 }
 
 ::-webkit-scrollbar {
-	@apply w-1.5 bg-transparent;
+	@apply w-1.5 h-1.5 bg-transparent;
 }
 
 ::-webkit-scrollbar-thumb {

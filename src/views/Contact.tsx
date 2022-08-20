@@ -1,38 +1,38 @@
 import { Component, For } from 'solid-js';
 
-const Contact: Component = () => {
-	const social_media = [
-		{
-			title: 'Facebook',
-			link: 'https://facebook.com/profile.php?id=100027236859562',
-			icon: 'facebook text-blue-500',
-		},
-		{
-			title: 'Instagram',
-			link: 'https://facebook.com/profile.php?id=100027236859562',
-			icon: 'instagram text-purple-500',
-		},
-		{
-			title: 'Whatsapp',
-			link: 'https://api.whatsapp.com/send?phone=6281231921351',
-			icon: 'whatsapp text-green-500',
-		},
-		{
-			title: 'Github',
-			link: 'https://github.com/izzaalfiansyah',
-			icon: 'github text-gray-800',
-		},
-		{
-			title: 'Email',
-			link: 'mailto:iansyah724@gmail.com',
-			icon: 'email text-red-500',
-		},
-	];
+export const social_media = [
+	{
+		title: 'Facebook',
+		link: 'https://facebook.com/profile.php?id=100027236859562',
+		icon: 'facebook text-blue-500',
+	},
+	{
+		title: 'Instagram',
+		link: 'https://facebook.com/profile.php?id=100027236859562',
+		icon: 'instagram text-purple-500',
+	},
+	{
+		title: 'Whatsapp',
+		link: 'https://api.whatsapp.com/send?phone=6281231921351',
+		icon: 'whatsapp text-green-500',
+	},
+	{
+		title: 'Github',
+		link: 'https://github.com/izzaalfiansyah',
+		icon: 'github text-gray-800',
+	},
+	{
+		title: 'Email',
+		link: 'mailto:iansyah724@gmail.com',
+		icon: 'email text-red-500',
+	},
+];
 
+const Contact: Component = () => {
 	return (
 		<>
 			<div class="lg:min-h-100vh flex flex-wrap -mx-4 lg:py-10">
-				<div class="w-full text-center mb-5 mt-5 lg:mb-0">
+				<div class="w-full text-center mb-5 mt-5 px-4">
 					<div class="text-blue-500 font-bold text-3xl">CONTACT</div>
 					<div>The places where you can find me</div>
 				</div>
