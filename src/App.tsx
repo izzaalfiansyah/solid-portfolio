@@ -113,9 +113,11 @@ const App: Component = () => {
 				<button
 					class="outline-none fixed lg:top-10 top-20 right-5 w-10 z-10 h-10 flex items-center justify-center rounded-full transition bg-purple-500 shadow-lg"
 					onClick={handleMusic}
-					classList={{ 'animate-spin': audioPlaying() }}
 				>
-					<i class="mdi dark:text-gray-900 text-white mdi-access-point text-xl"></i>
+					<i
+						class="mdi dark:text-gray-900 text-white mdi-access-point text-xl"
+						classList={{ 'animate-spin': audioPlaying() }}
+					></i>
 				</button>
 			</div>
 			<div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center font-semibold lg:text-5xl text-3xl bg-white dark:bg-gray-900 z-30 text-blue-500 animate-loading pointer-events-none">
