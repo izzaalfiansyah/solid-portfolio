@@ -145,7 +145,7 @@ export const project = [
 		name: 'Direktori Biodata',
 		description: 'Aplikasi pengelolaan biodata pekerja',
 		link: '',
-		language: ['Pure PHP'],
+		language: ['Codeigniter'],
 		photo: ['direktori.png'],
 	},
 	{
@@ -236,25 +236,25 @@ const Project: Component = () => {
 					<div class="text-blue-500 font-bold text-3xl">PROJECT</div>
 					<div>Collection of works or achievements that I made individually or in groups</div>
 				</div>
-				<div class="grid lg:grid-cols-3 grid-cols-1 gap-4 w-full p-4">
+				<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-full p-4">
 					<For each={project}>
 						{(item) => (
 							<Link
 								href={'/project/' + item.name.toLowerCase().replace(/ /gi, '-')}
-								class="bg-white rounded relative shadow overflow-hidden group"
+								class="bg-white dark:bg-gray-900 rounded relative shadow overflow-hidden group"
 							>
 								<div
-									class="absolute -top-1 right-2 p-1 px-2 text-xs uppercase shadow bg-white rounded-b-lg z-3"
+									class="absolute -top-1 right-2 p-1 px-2 text-xs uppercase shadow dark:bg-gray-900 bg-white rounded-b-lg z-3"
 									classList={{ 'text-green-500': item.team, 'text-blue-500': !item.team }}
 								>
 									{item.team ? 'Group' : 'Individual'}
 								</div>
 								<img
-									src={'/src/assets/project/' + item.photo[0]}
+									src={'/assets/project/' + item.photo[0]}
 									class="lg:h-180px h-150px object-cover w-full transform scale-90 transition rounded group-hover:scale-100"
 									alt=""
 								/>
-								<div class="absolute top-0 left-0 right-0 bottom-0 bg-blue-700 bg-opacity-50 transition hidden group-hover:flex items-center justify-center rounded z-2 text-2xl uppercase text-white font-semibold">
+								<div class="absolute top-0 left-0 right-0 bottom-0 bg-white dark:(bg-gray-900) text-blue-500 transition hidden group-hover:flex items-center justify-center rounded z-2 text-2xl uppercase font-semibold">
 									<div class="text-center">{item.name}</div>
 								</div>
 							</Link>

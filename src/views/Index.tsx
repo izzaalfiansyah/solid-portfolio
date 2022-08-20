@@ -30,7 +30,7 @@ const Index: Component = () => {
 					<a
 						href={CV}
 						target="_blank"
-						class="bg-white shadow text-blue-500 uppercase rounded px-4 p-2 font-semibold m-2 text-sm inline-block transform transition hover:scale-110"
+						class="bg-white dark:bg-gray-900 shadow text-blue-500 uppercase rounded px-4 p-2 font-semibold m-2 text-sm inline-block transform transition hover:scale-110"
 					>
 						DOWNLOAD CV
 					</a>

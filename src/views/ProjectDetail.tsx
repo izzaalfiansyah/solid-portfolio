@@ -42,7 +42,7 @@ const ProjectDetail: Component = () => {
 							<a
 								href={item.link}
 								target="_blank"
-								class="uppercase mr-4 flex items-center bg-white rounded-full shadow h-10 px-4 p-1 hover:bg-blue-500 hover:text-white transition mt-4 float-left"
+								class="uppercase mr-4 flex items-center dark:bg-gray-900 dark:hover:bg-blue-500 bg-white rounded-full shadow h-10 px-4 p-1 hover:bg-blue-500 hover:text-white transition mt-4 float-left"
 							>
 								<i class="mdi mdi-link-variant"></i> Preview
 							</a>
@@ -51,7 +51,7 @@ const ProjectDetail: Component = () => {
 							{(item) => (
 								<a
 									href={lang[item.toLowerCase() as 'svelte'].web}
-									class="bg-white rounded shadow p-1 inline-block text-center ml-2 w-10 h-10 hover:shadow-blue-500 transition mt-4"
+									class="bg-white dark:bg-gray-900 rounded shadow p-1 inline-block text-center ml-2 w-10 h-10 hover:shadow-blue-500 transition mt-4"
 								>
 									<img
 										src={lang[item.toLowerCase() as 'svelte'].img}
@@ -69,7 +69,7 @@ const ProjectDetail: Component = () => {
 						<For each={item.photo}>
 							{(p) => (
 								<img
-									src={'/src/assets/project/' + p}
+									src={'/assets/project/' + p}
 									class="rounded lg:w-2/3 lg:mr-4 lg:mb-0 mb-4 shadow lg:h-350px object-cover"
 								/>
 							)}
