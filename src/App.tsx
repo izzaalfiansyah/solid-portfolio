@@ -1,6 +1,6 @@
 import { Link, useLocation } from '@solidjs/router';
-import { Component, createMemo, createSignal, For, onMount } from 'solid-js';
-import MyAudio from '@/assets/music.mp3';
+import { Component, createSignal, For, onMount } from 'solid-js';
+import MyAudio from '@/assets/Bruno_Mars_-_The_Lazy_Song.mp3';
 import '@/App.css';
 import Router from './Router';
 
@@ -29,7 +29,7 @@ const paths = [
 
 const App: Component = () => {
 	const location = useLocation();
-	const [audio, setAudio] = createSignal<any>();
+	const [audio, setAudio] = createSignal<HTMLAudioElement>(document.createElement('audio'));
 	const [audioPlaying, setAudioPlaying] = createSignal<boolean>(false);
 	const [darkMode, setDarkMode] = createSignal<boolean>(false);
 
@@ -63,7 +63,11 @@ const App: Component = () => {
 	}
 
 	onMount(() => {
-		setAudio(new Audio(MyAudio));
+		const music = document.createElement('audio');
+		music.src = MyAudio;
+		music.loop = true;
+
+		setAudio(music);
 		darkInit();
 	});
 
@@ -107,12 +111,15 @@ const App: Component = () => {
 					<Router></Router>
 				</div>
 				<button
-					class="outline-none fixed lg:top-10 top-20 right-5 w-10 z-10 h-10 flex items-center justify-center rounded-full transition bg-red-500 shadow-lg"
+					class="outline-none fixed lg:top-10 top-20 right-5 w-10 z-10 h-10 flex items-center justify-center rounded-full transition bg-purple-500 shadow-lg"
 					onClick={handleMusic}
 					classList={{ 'animate-spin': audioPlaying() }}
 				>
 					<i class="mdi dark:text-gray-900 text-white mdi-access-point text-xl"></i>
 				</button>
+			</div>
+			<div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center font-semibold lg:text-5xl text-3xl bg-white dark:bg-gray-900 z-30 text-blue-500 animate-loading pointer-events-none">
+				<span class="animate-bounce">Loading...</span>
 			</div>
 		</div>
 	);

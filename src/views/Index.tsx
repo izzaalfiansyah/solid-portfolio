@@ -37,7 +37,7 @@ const Index: Component = () => {
 						href="/about"
 						class="bg-blue-500 shadow text-white uppercase rounded px-4 p-2 font-semibold m-2 text-sm inline-block transform transition hover:scale-110"
 					>
-						CONTACT ME
+						ABOUT ME
 					</Link>
 				</div>
 			</div>

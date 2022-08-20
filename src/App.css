@@ -7,3 +7,19 @@
 		transform: translateX(-100%);
 	}
 }
+
+.animate-loading {
+	animation: animate-loading 2s both;
+}
+
+@keyframes animate-loading {
+	0% {
+		opacity: 100%;
+	}
+	90% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0;
+	}
+}
