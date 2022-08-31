@@ -5,11 +5,11 @@ import 'virtual:windi.css';
 import '@/index.css';
 import '@mdi/font/css/materialdesignicons.css';
 import App from '@/App';
-import { Router, hashIntegration } from '@solidjs/router';
+import { Router } from '@solidjs/router';
 
 render(
 	() => (
-		<Router source={hashIntegration()}>
+		<Router>
 			<App />
 		</Router>
 	),

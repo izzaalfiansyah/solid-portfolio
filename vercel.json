@@ -1,1 +1,14 @@
-{}
+{
+	"routes": [
+		{ "handle": "filesystem" },
+		{
+			"src": "/project/(.*)",
+			"continue": true
+		},
+		{
+			"src": "/me.png",
+			"continue": true
+		},
+		{ "src": "/(.*)", "dest": "/index.html" }
+	]
+}
