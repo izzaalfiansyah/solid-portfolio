@@ -28,5 +28,10 @@
 		<div id="root"></div>
 
 		<script src="/src/index.tsx" type="module"></script>
+		<script>
+			document.querySelectorAll('[content*=assets]').forEach((el) => {
+				el.content = window.location.origin + el.content;
+			});
+		</script>
 	</body>
 </html>
