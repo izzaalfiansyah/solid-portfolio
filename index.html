@@ -14,24 +14,19 @@
 			content="Hello! My Name is Muhammad Izza Alfiansyah and you can call me Alfian. I am a fullstack developer at Fopegram also student at Politeknik Negeri Jember"
 		/>
 		<meta property="og:author" content="Muhammad Izza Alfiansyah" />
-		<meta property="og:image" content="/assets/me.png" />
-		<meta property="og:image" itemprop="image" content="/assets/me.png" />
+		<meta property="og:image" content="https://izzaalfiansyah.vercel.app/assets/me.png" />
+		<!-- <meta property="og:image" itemprop="image" content="https://izzaalfiansyah.vercel.app/assets/me.png" /> -->
 		<meta name="twitter:title" content="Muhammad Izza Alfiansyah" />
 		<meta
 			name="twitter:description"
 			content="Hello! My Name is Muhammad Izza Alfiansyah and you can call me Alfian. I am a fullstack developer at Fopegram also student at Politeknik Negeri Jember"
 		/>
-		<meta name="twitter:image" content="/assets/me.png" />
+		<meta name="twitter:image" content="https://izzaalfiansyah.vercel.app/assets/me.png" />
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
 
 		<script src="/src/index.tsx" type="module"></script>
-		<script>
-			document.querySelectorAll('[content*=assets]').forEach((el) => {
-				el.content = window.location.origin + el.content;
-			});
-		</script>
 	</body>
 </html>
