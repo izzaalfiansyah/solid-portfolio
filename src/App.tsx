@@ -1,6 +1,6 @@
 import { Link, useLocation } from '@solidjs/router';
 import { Component, createSignal, For, onMount } from 'solid-js';
-import MyAudio from '@/assets/Bruno_Mars_-_The_Lazy_Song.mp3';
+import MyAudio from '@/assets/Serenity.mp3';
 import '@/App.css';
 import Router from './Router';
 
@@ -73,12 +73,11 @@ const App: Component = () => {
 
 	return (
 		<div>
-			<div class="min-h-screen bg-gray-50 dark:(bg-gray-800 text-white)">
+			<div class="min-h-screen bg-gray-50 text-black dark:(bg-gray-800 text-white)">
 				<div class="nav h-15 px-6 flex z-20 flex-row items-center bg-white dark:bg-gray-900 shadow lg:(fixed left-0 bottom-0 top-0 w-18 h-screen flex-col py-10 justify-between) transition relative">
 					<div class="flex-1">
 						<Link
 							href="/"
-							style={{ 'font-family': 'cursive' }}
 							class="text-blue-500 text-2xl text-shadow transform lg:(-rotate-90 inline-block mt-8)"
 						>
 							Alfiansyah

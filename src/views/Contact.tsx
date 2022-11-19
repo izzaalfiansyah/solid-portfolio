@@ -8,7 +8,7 @@ export const social_media = [
 	},
 	{
 		title: 'Instagram',
-		link: 'https://facebook.com/profile.php?id=100027236859562',
+		link: 'https://www.instagram.com/izzaalfiansyah_/',
 		icon: 'instagram text-purple-500',
 	},
 	{
